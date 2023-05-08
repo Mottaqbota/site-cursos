@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: dashed 2px black; */
+  outline: dashed 1px black;
   text-decoration: none;
   list-style: none;
   font-family: Poppins;
@@ -12,7 +12,8 @@
 
 
 :root{
-  --texts-color: #000;
+  --texts-color: rgb(29, 29, 29);
+  --bg-secondary: #d9d9d9;
 }
 
 .container-header{ 
@@ -55,7 +56,46 @@
   text-decoration:  underline;
 }
 
+.right-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-div{
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
 .user-img{
   width: 60px;
+}
+
+.user-div:hover > .user-infos{
+
+}
+
+.user-infos{
+  display: none;
+}
+
+.active-infos{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.user-infos{
+  top: 100px;
+  position: absolute;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--bg-secondary);
+}
+.btns-user{
+  display: flex;
 }
