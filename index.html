@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Site Cursos</title>
 </head>
 <body>
@@ -14,18 +15,31 @@
         <img class="logo-icon" src="https://cdn2.downdetector.com/static/uploads/logo/UDEMY_3_J0k3zxW.png" alt="">
       </div>
 
-      <div class="center-div">
+      <!-- <div class="center-div">
         <a class="btn-header" href="">Dashboard</a>
         <a class="btn-header" href="">Cursos</a>
         <a class="btn-header" href="">Planos</a>
         <a class="btn-header" href="">Alunos</a>
-      </div>
+      </div> -->
       <div class="right-div">
-        <div class="user-div">
+        <div class="user-div" onclick="infoUser()">
           <img class="user-img" src="https://comoajudarmeuproximo.com.br/wp-content/uploads/2018/08/user.png" alt="">
+            <p>User</p>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+        
+        <div class="user-infos" id="divUser">
+          <p>User</p>
+          <p>Cursos: <strong> Front-End</strong></p>
+          <div class="btns-user">
+            <button>Trocar Conta</button>
+            <button>Sair</button>
+  
+          </div>
         </div>
       </div>
     </nav>
   </header>
+  <script src="script.js"></script>
 </body>
 </html>
