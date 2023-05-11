@@ -8,38 +8,82 @@
   <link rel="stylesheet" href="style.css">
   <title>Site Cursos</title>
 </head>
-<body>
+<body  onload="loading()">
+  <div id="loadingPage">
+    <div class="headerLoad">
+      <div class="boxLogo"></div>
+      <div class="boxUser"></div>
+    </div>
+  </div>
+
   <header class="container-header">
     <nav class="container-nav">
       <div class="left-div">
         <img class="logo-icon" src="https://cdn2.downdetector.com/static/uploads/logo/UDEMY_3_J0k3zxW.png" alt="">
       </div>
 
-      <!-- <div class="center-div">
-        <a class="btn-header" href="">Dashboard</a>
-        <a class="btn-header" href="">Cursos</a>
-        <a class="btn-header" href="">Planos</a>
-        <a class="btn-header" href="">Alunos</a>
-      </div> -->
+        <!-- <div class="center-div">
+          <a class="btn-header" href="">Dashboard</a>
+          <a class="btn-header" href="">Cursos</a>
+          <a class="btn-header" href="">Planos</a>
+          <a class="btn-header" href="">Alunos</a>
+        </div> -->
       <div class="right-div">
         <div class="user-div" onclick="infoUser()">
+          <p>User</p>
+          <ion-icon id="icon-infuser" name="chevron-down-outline" style="transition: 0.2s;"></ion-icon>
           <img class="user-img" src="https://comoajudarmeuproximo.com.br/wp-content/uploads/2018/08/user.png" alt="">
-            <p>User</p>
-            <ion-icon name="chevron-down-outline"></ion-icon>
         </div>
-        
+          
         <div class="user-infos" id="divUser">
           <p>User</p>
           <p>Cursos: <strong> Front-End</strong></p>
           <div class="btns-user">
             <button>Trocar Conta</button>
             <button>Sair</button>
-  
           </div>
         </div>
       </div>
     </nav>
   </header>
-  <script src="script.js"></script>
+
+  <main>
+    <section>
+      <div class="container-cursos">
+        <div class="box-curso">
+          <img class="img-curso" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+          <p>Curso de Front-End</p>
+          <button>Acessar conteudo</button>
+        </div>
+        <div class="box-curso">
+          <img class="img-curso" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+          <p>Curso de Front-End</p>
+          <button>Acessar conteudo</button>
+        </div>
+        <div class="box-curso">
+          <img class="img-curso" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+          <p>Curso de Front-End</p>
+          <button>Acessar conteudo</button>
+        </div>
+        <div class="box-curso">
+          <img class="img-curso" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+          <p>Curso de Front-End</p>
+          <button>Acessar conteudo</button>
+        </div>
+        <div class="box-curso">
+          <img class="img-curso" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+          <p>Curso de Front-End</p>
+          <button>Acessar conteudo</button>
+        </div>
+        <div class="box-curso">
+          <img class="img-curso" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Front-end-logo-color%402x.png" alt="">
+          <p>Curso de Front-End</p>
+          <button>Acessar conteudo</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+<script src="script.js"></script>
 </body>
 </html>
