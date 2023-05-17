@@ -1,8 +1,8 @@
 var divUser = document.getElementById('divUser');
 function infoUser(){
+  var seta = document.getElementById('icon-infuser') 
   divUser.classList.toggle('active-infos');
-  var cubo = document.getElementById('icon-infuser') 
-  cubo.classList.toggle('girar')
+  seta.classList.toggle('girar')
 };
 
 
